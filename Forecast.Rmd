@@ -1,0 +1,31 @@
+
+```{r}
+head(beer)
+```
+```{r}
+#plot data
+autoplot(beer)
+```
+
+```{r}
+#simple exponential smoothing using alpha at .1, .5 and .9
+#which one has the lowest RMSE, h is the lag and c is confidence interval -80 or 95
+beer1 <- ses(beer,h=25, level = c(80,95), alpha = .1)
+summary(beer1)
+autoplot(beer1)
+
+
+```
+
+```{r}
+beer2 <- ses(beer,h=25, level = c(80,95), alpha = .5)
+summary(beer2)
+autoplot(beer2)
+```
+
+```{r}
+beer3 <- ses(beer,h=25, level = c(80,95), alpha = .10)
+summary(beer3)
+autoplot(beer3)
+```
+
