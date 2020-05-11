@@ -1,0 +1,74 @@
+#====================Moving Averages==============
+
+
+
+head(Gold)
+summary(Gold)
+View(Gold)
+
+# Gold data, period - smaller the number older the event
+#its daily price data
+
+library(forecast)
+library(ggplot2)
+
+install.packages("ggfortify")
+library(ggfortify)
+
+# The dim() command allows you to check the size of the dataset
+# The first value indicates the number of rows
+# The second value indicates the number of columns
+
+dim(Gold)
+str(Gold)
+
+#Next we create gold time series
+
+goldts <-ts(Gold[,2])
+
+autoplot(goldts)
+
+##############################################################################
+The following adds options to label the chart
+##############################################################################
+
+autoplot(goldts) +
+  ggtitle("Daily Gold Prices") +
+  xlab("period: Jan 1, 1968 to June 11, 2019") +
+  ylab("USD")
+
+
+# The moving average command is ma(x, order)
+# x is the data vector and order is the number of lags
+# Make sure you install the forecast library
+
+
+
+###  example: moving average 10 lags
+
+goldts10lags <- ma(goldts, 10)
+
+autoplot(goldts10lags) +
+  ggtitle("Gold Prices: Moving Average 10 lags") +
+  xlab("period: Jan 1, 1968 to June 11, 2019") +
+  ylab("USD")
+
+###  example: moving average 100 lags
+
+goldts100lags <- ma(goldts, 100)
+
+autoplot(goldts100lags) +
+  ggtitle("Gold Prices: Moving Average 100 lags") +
+  xlab("period: Jan 1, 1968 to June 11, 2019") +
+  ylab("USD")
+
+
+###  example: moving average 500 lags
+# with increase in the length of the time-period the trend graph smoothens
+
+goldts500lags <- ma(goldts, 500)
+
+autoplot(goldts500lags) +
+  ggtitle("Gold Prices: Moving Average 500 lags") +
+  xlab("period: Jan 1, 1968 to June 11, 2019") +
+  ylab("USD")
