@@ -1,0 +1,26 @@
+#Simple Exponential Smoothing  
+
+library(forecast)
+library(fma)
+
+#exploring the beer data set
+head(beer)
+
+install.packages("rmarkdown")
+library(rmarkdown)
+
+beer1 <- ses(beer,h=25, level = c(80,95), alpha = .1)
+summary(beer1)
+autoplot(beer1)
+#RMSE 19.96
+
+beer2 <- ses(beer,h=25, level = c(80,95), alpha = .5)
+summary(beer2)
+autoplot(beer2)
+#RMSE 20.155
+
+
+beer3 <- ses(beer,h=25, level = c(80,95), alpha = .10)
+summary(beer3)
+autoplot(beer3)
+#RMSE 19.96
