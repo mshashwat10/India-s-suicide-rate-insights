@@ -16,12 +16,12 @@ After seeing the results, we can see Hardcover(x) is not significant(p-value < 0
 
 Exponential Smoothing is one of the most popular forecasting techniques, best fit for short-term forecasts without trend
 or seasonality. Values of alpha(smoothing constant) is chosen based on the value that gives the lowest RMS value,
-another point is that it gives more weight to the current data than the past.Bigger Alpha means you are giving 
+another point is that it gives more weight to the current data than the past.Bigger Alpha means you are giving more weight to the recent data.
 
+Beer dataset is used to perform SES forecasting technique, running the SES keeping alpha as 0.1, h=25( no of periods for forecast) and CI as 80,95 we observe the value of RMS as 19.96
 ![Simple Exp Smoothing , Alpha = 0 1](https://user-images.githubusercontent.com/38140470/82739101-82e89f00-9d02-11ea-998f-b266cffd8392.png)
 
-
+Running the SES second time keeping alpha as 0.5, we observe the value of RMS as 20.155
 ![SES Alpha = 0 5](https://user-images.githubusercontent.com/38140470/82739105-8714bc80-9d02-11ea-99cd-a1969a9a68d3.png)
 
-
-![SES Alpha = 0 10](https://user-images.githubusercontent.com/38140470/82739106-8bd97080-9d02-11ea-851d-e487fe659581.png)
+Since keeping Alpha as 0.5 gives us the lesser RMS value so we will use this value of alpha for our final forecasting model
