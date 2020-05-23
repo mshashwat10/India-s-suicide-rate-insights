@@ -15,8 +15,8 @@ After seeing the results, we can see Hardcover(x) is not significant(p-value < 0
 # 2. Simple Exponential Smoothing
 
 Exponential Smoothing is one of the most popular forecasting techniques, best fit for short-term forecasts without trend
-or seasonality. Values of alpha(smoothing constant) is choosen on the basis of the value that gives the lowest RMS value,
-another point is that it gives more weight to the current data than past.
+or seasonality. Values of alpha(smoothing constant) is chosen based on the value that gives the lowest RMS value,
+another point is that it gives more weight to the current data than the past.Bigger Alpha means you are giving 
 
 ![Simple Exp Smoothing , Alpha = 0 1](https://user-images.githubusercontent.com/38140470/82739101-82e89f00-9d02-11ea-998f-b266cffd8392.png)
 
