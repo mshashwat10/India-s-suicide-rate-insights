@@ -39,6 +39,10 @@ Holt's exponential smoothing is used for data with trends
 Winter's exponential smoothing handles trends as well as seasonality, here is the forecasting output using Winter's forecast method  
 ![Holt’s 2](https://user-images.githubusercontent.com/38140470/82746335-14343180-9d54-11ea-8d3a-1911cbf1c90c.png)
 
-Holt's & Winter's 
+Holt's & Winter's Exponential Smoothing
+
+In a multiplicative time series, the components multiply together to make the time series whereas in an additive time series, the components add together to make the time series.Here is the additive & multiplicative forecast using Holt's & Winter's 
+exponential smoothing method.
+
 ![HWadditivemultiplicative](https://user-images.githubusercontent.com/38140470/82746337-17c7b880-9d54-11ea-8f6b-0ee638542048.png)
 
