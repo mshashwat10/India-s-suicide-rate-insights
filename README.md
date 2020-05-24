@@ -25,3 +25,20 @@ Running the SES second time keeping alpha as 0.5, we observe the value of RMS as
 ![SES Alpha = 0 5](https://user-images.githubusercontent.com/38140470/82739105-8714bc80-9d02-11ea-99cd-a1969a9a68d3.png)
 
 Since keeping Alpha as 0.5 gives us the lesser RMS value so we will use this value of alpha for our final forecasting model
+
+
+# 3. Holt's & Winter's Exponential Smoothing
+
+Simple exponential smoothing method does not perform well with data that has a trend or seasonality, here is the forecasting output for the airpass data set using Simple Exponential smoothing
+
+![Forecast SES](https://user-images.githubusercontent.com/38140470/82746330-0b436000-9d54-11ea-839b-904f1a9dea14.png)
+
+Holt's exponential smoothing is used for data with trends
+![Holt's](https://user-images.githubusercontent.com/38140470/82746332-0f6f7d80-9d54-11ea-934a-1040a7c4770a.png)
+
+Winter's exponential smoothing handles trends as well as seasonality, here is the forecasting output using Winter's forecast method  
+![Holt’s 2](https://user-images.githubusercontent.com/38140470/82746335-14343180-9d54-11ea-8d3a-1911cbf1c90c.png)
+
+Holt's & Winter's
+![HWadditivemultiplicative](https://user-images.githubusercontent.com/38140470/82746337-17c7b880-9d54-11ea-8f6b-0ee638542048.png)
+
