@@ -27,7 +27,7 @@ Running the SES second time keeping alpha as 0.5, we observe the value of RMS as
 Since keeping Alpha as 0.5 gives us the lesser RMS value so we will use this value of alpha for our final forecasting model
 
 
-# 3. Holt's & Winter's Exponential Smoothing
+# 3. Holt's & Winter's Exponential Smoothing - Airpassenger Dataset
 
 Simple exponential smoothing method does not perform well with data that has a trend or seasonality, here is the forecasting output for the airpass data set using Simple Exponential smoothing
 
@@ -39,6 +39,6 @@ Holt's exponential smoothing is used for data with trends
 Winter's exponential smoothing handles trends as well as seasonality, here is the forecasting output using Winter's forecast method  
 ![Holt’s 2](https://user-images.githubusercontent.com/38140470/82746335-14343180-9d54-11ea-8d3a-1911cbf1c90c.png)
 
-Holt's & Winter's
+Holt's & Winter's 
 ![HWadditivemultiplicative](https://user-images.githubusercontent.com/38140470/82746337-17c7b880-9d54-11ea-8f6b-0ee638542048.png)
 
